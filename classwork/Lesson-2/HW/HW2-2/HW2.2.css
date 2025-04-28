@@ -6,6 +6,7 @@ body{
     height: 100px;
     width: 100px;
     background-color: red;
+    transition: 1.5s;
 }
 .rep{
     height: 100%;
@@ -16,4 +17,5 @@ body{
 .box:hover{
     border-radius: 50%;
     background-color: gray;
+    transition: 1.5s;
 }
