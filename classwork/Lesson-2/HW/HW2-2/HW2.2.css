@@ -1,0 +1,19 @@
+body{
+    height: 100vh;
+    background-color: papayawhip;
+}
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+.rep{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box:hover{
+    border-radius: 50%;
+    background-color: gray;
+}
