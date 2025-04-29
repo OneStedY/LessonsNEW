@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    background-color: #006500;
+    padding: 0;
+    margin: 0;
+}
+
+.monthsname{
+    height: 100%;
+    background-color: #006500;
+}
+.months1{
+    background-color: #ddbb6f;
+    font-family: "Berlin Sans FB", serif;
+    display: inline-block;
+
+}
