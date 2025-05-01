@@ -1,17 +1,27 @@
-body{
-    height: 100vh;
-    background-color: #006500;
+*{
     padding: 0;
     margin: 0;
+}
+
+body{
+    height: 100vh;
 }
 
 .monthsname{
     height: 100%;
     background-color: #006500;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
 }
 .months1{
     background-color: #ddbb6f;
     font-family: "Berlin Sans FB", serif;
-    display: inline-block;
 
+}
+
+p{
+    text-align: center;
 }

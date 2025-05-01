@@ -1,0 +1,43 @@
+*{
+    /*padding: 0;*/
+    /*margin: 0;*/
+}
+body{
+    height: 100vh;
+    padding: 2%;
+}
+/*=========================header==============================*/
+header{
+    background-color: steelblue;
+    height: 30vh;
+
+}
+/*=============================sections=================================*/
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section{
+    background-color: blue;
+    height: 25vh;
+    width: 32%;
+    margin: 2%;
+
+
+}
+/*==========================footer===============================*/
+footer{
+    background-color: steelblue;
+    height: 30vh;
+
+
+}
+/*===================================================================*/
+header, footer, section {
+    color: white;
+    display: flex;
+    font-family: "Roboto Thin", sans-serif;
+    justify-content: center;
+    align-items: center;
+}

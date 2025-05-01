@@ -1,0 +1,58 @@
+body {
+
+    font-family: Arial, sans-serif; /* Шрифт тексту */
+
+    background-color: lightgray; /* Фоновий колір сторінки */
+
+    padding: 20px; /* Відступи всередині тіла */
+
+}
+
+/* Стилі для таблиці */
+
+table {
+
+    width: 50%; /* Ширина таблиці */
+
+    margin: 0 auto; /* Центрування таблиці */
+
+    border-collapse: collapse; /* Об'єднання меж */
+
+    background-color: white; /* Білий фон таблиці */
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тінь для таблиці */
+
+}
+
+/* Стилі для заголовків та комірок */
+
+th, td {
+
+    padding: 12px; /* Відступи всередині клітинок */
+
+    border: 6px solid blue; /* Сірі межі */
+
+    text-align: left; /* Вирівнювання тексту по лівому краю */
+
+}
+
+/* Стилі для заголовків таблиці */
+
+th {
+
+    background-color: steelblue; /* Темно-зелений фон */
+
+    color: white; /* Білий текст */
+
+}
+
+/* Ефект наведення на рядок */
+
+tr:hover {
+
+    background-color: lightyellow; /* Світло-жовтий фон при наведенні */
+
+}
+td:nth-child(2) {
+    text-align: center;
+}
