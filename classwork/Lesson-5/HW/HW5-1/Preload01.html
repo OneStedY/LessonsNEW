@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>5.1</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+
+        }
+        .load1{
+            height: 200px;
+            width: 200px;
+            border: 10px solid;
+            animation: preload 3s ease infinite alternate;
+            background-color: white;
+
+        }
+    @keyframes preload {
+        from{
+        transform: rotate(270deg);
+        }
+
+
+        to{
+        transform: rotate(135deg);
+        }
+
+    }
+    </style>
+</head>
+<body>
+<div class="load1">
+
+
+</div>
+</body>
+</html>
