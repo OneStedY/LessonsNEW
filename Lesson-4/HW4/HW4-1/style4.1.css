@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, footer {
+    height: 22vh;
+    background-color: #d9d9d9;
+}
+/*footer {*/
+/*    height: 22vh;*/
+/*    background-color: #d9d9d9;*/
+/*}*/
+main div section {
+    background-color: #B7ADAD;
+    width: 46vw;
+    height: 30vh;
+}
+.first{
+    background-color: #827878;
+    width: 46vw;
+    height: 26vh;
+}
+/*.first section{*/
+/*    height: 26vh;*/
+/*    width: 46vw;*/
+/*}*/
+main{
+    display: flex;
+}
+aside{
+    background-color: #C0BDBD;
+    width: 27vw;
+    height: 56vh;
+}
