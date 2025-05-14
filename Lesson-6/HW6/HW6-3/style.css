@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Instrument Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.form-inst{
+    border: 2px solid rgba(128, 128, 128, 0.45);
+    background: white;
+    width: 330px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.inst-logo h1 {
+    font-family: "Lobster", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+}
+.form-inst form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+input[type="text"],
+input[type="password"]{
+    margin-top: 5px;
+    width: 270px;
+    height: 40px;
+    border: 2px solid rgba(128, 128, 128, 0.45);
+    border-radius: 5px;
+}
+img{
+    width: 14px;
+    height: 14px;
+}
+.facebook{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.facebook a{
+    text-decoration: none;
+    color: navy;
+}
+.forgot {
+    margin-top: 15px;
+    text-decoration: none;
+    color: navy;
+}
+input[type="submit"]{
+    margin-top: 20px;
+    width: 270px;
+    height: 40px;
+    background: cornflowerblue;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+}
+h2{
+    margin-top: 15px;
+    font-size: 16px;
+    color: gray;
+}
+.footer-inst{
+    margin-top: 550px;
+    width: 330px;
+    height: 50px;
+    border: 2px solid rgba(128, 128, 128, 0.45);
+    background: white;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-inst p a{
+    text-decoration: none;
+    color: cornflowerblue;
+}
+.footer-inst p{
+    font-weight: 500;
+    font-size: 14px;
+
+}
+label{
+    margin-left: 30px;
+}

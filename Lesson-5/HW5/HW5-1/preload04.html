@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>04</title>
+    <style>
+        body {
+            margin: 0;
+            background: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: sans-serif;
+        }
+
+        .text-loader {
+            font-size: 24px;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        .text-loader::after {
+            content: '';
+            display: inline-block;
+            width: 1ch;
+            animation: dots 1s steps(3, end) infinite;
+        }
+
+        @keyframes dots {
+            0%   { content: ''; }
+            33%  { content: '.'; }
+            66%  { content: '..'; }
+            100% { content: '...'; }
+        }
+    </style>
+</head>
+<body>
+<div class="text-loader">Loading</div>
+</body>
+</html>

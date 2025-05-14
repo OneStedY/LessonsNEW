@@ -12,8 +12,9 @@ body{
 }
 
 .main {
+    max-width: 1340px;
+    width: 100%;
     margin: 0 auto;
-    width: 1340px;
 }
 nav{
     padding-top: 36px;
@@ -60,8 +61,7 @@ ul a{
     text-transform: uppercase;
     color: #E9E3DC;
     margin: 74px auto 33px auto;
-    width: 1255px;
-    height: 285px;
+    max-width: 1255px;
 }
 .burgers{
     margin: 0 auto;
