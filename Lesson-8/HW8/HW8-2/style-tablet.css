@@ -1,0 +1,15 @@
+@media screen and (min-width: 769px) and (max-width: 1270px){
+    .circles{
+        flex-wrap: wrap;
+        width: 720px;
+        gap: 24px;
+        margin: 48px 24px;
+    }
+    .circle{
+        width: 348px;
+    }
+    .circle p{
+        margin-bottom: 40px;
+    }
+
+}

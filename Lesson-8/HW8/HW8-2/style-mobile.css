@@ -1,0 +1,12 @@
+@media screen and (max-width: 768px){
+    .circles{
+        margin: 32px 16px;
+        width: 343px;
+        flex-direction: column;
+    }
+    .circle p{
+        width: 343px;
+        margin-bottom: 32px;
+    }
+
+}
