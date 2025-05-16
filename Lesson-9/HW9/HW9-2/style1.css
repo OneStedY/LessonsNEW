@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.grid{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+    "header header header"
+    "left main right"
+    "footer footer footer"
+;
+}
+footer, header{
+    background: #D9D9D9;
+}
+main{
+    background: #A4A4A4;
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
+header{
+    grid-area: header;
+}
+.left{
+    grid-area: left;
+}
+.right{
+    grid-area: right;
+}
+.right, .left{
+    background: #C0BDBD;
+}
