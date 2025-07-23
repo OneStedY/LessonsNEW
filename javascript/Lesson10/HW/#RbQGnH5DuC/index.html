@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form id="tabGeneral">
+    <input type="number" id="lines">
+    <input type="number" id="cells">
+    <input type="text" id="data">
+    <button>Generate</button>
+
+
+</form>
+<table id="table"></table>
+
+
+<script>
+
+    const table = document.getElementById(`table`)
+
+    const genTab = document.forms[`tabGeneral`];
+
+
+    genTab.onsubmit = function (e){
+        e.preventDefault();
+        const lines = +genTab.lines.value;
+        const cells = +genTab.cells.value;
+        const data = genTab.data.value;
+        console.log(lines, cells, data)
+
+        for (let i = 0; i < lines; i++) {
+               const tr = document.createElement(`tr`)
+            for (let j = 0; j < cells; j++) {
+                const td = document.createElement(`td`);
+                td.innerText = data;
+
+
+
+                tr.appendChild(td)
+            }
+
+                table.appendChild(tr)
+            
+        }
+    };
+</script>
+
+</body>
+</html>

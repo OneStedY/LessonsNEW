@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="target">
+
+</div>
+
+<script>
+let curNum = +localStorage.getItem(`number`);
+curNum += 1;
+localStorage.setItem(`number`, curNum);
+
+document.getElementById(`target`).innerText = curNum;
+</script>
+</body>
+</html>

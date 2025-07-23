@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form id="index">
+  <input type="text" id="name">
+  <input type="text" id="surname">
+  <input type="number" id="age">
+  <input type="button" id="buttonSend" value="send">
+</form>
+<div id="target"></div>
+
+<script>
+  let f1 = document.forms.index;
+
+  document.getElementById(`target`);
+
+
+  const btnVal = f1.buttonSend;
+
+  buttonSend.addEventListener(`click`, () =>{
+    const nameVal = f1.name.value;
+    const surVal = f1.surname.value;
+    const ageVal = f1.age.value;
+    let obj = {nameVal, surVal, ageVal}
+    console.log(obj)
+    target.innerText = obj.nameVal + ` ` + obj.surVal + ` ` + obj.ageVal
+  });
+
+
+  // f1.onsubmit = function (){
+  //   f1.preventDefault()
+  // }
+
+</script>
+
+</body>
+</html>

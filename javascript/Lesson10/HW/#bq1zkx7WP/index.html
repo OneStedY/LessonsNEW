@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    #price-block {
+      width: 200px;
+      margin: 100px auto;
+      padding: 30px;
+      font-size: 24px;
+      text-align: center;
+      background-color: grey;
+    }
+  </style>
+</head>
+<body>
+<div id="price-block">100грн</div>
+
+<script>
+  const priceKey = 'priceValue';
+  const timeKey = 'lastUpdate';
+
+  let price = localStorage.getItem(priceKey);
+  let lastUpdate = localStorage.getItem(timeKey);
+
+  if (!price) {
+    price = 100;
+    localStorage.setItem(priceKey, price);
+    localStorage.setItem(timeKey, Date.now());
+  } else {
+    const now = Date.now();
+    const secondsPassed = (now - lastUpdate) / 1000;
+
+    if (secondsPassed >= 10) {
+      price = parseInt(price) + 10;
+      localStorage.setItem(priceKey, price);
+      localStorage.setItem(timeKey, now);
+    }
+  }
+
+  document.getElementById('price-block').textContent = `${price}грн`;
+</script>
+
+
+</body>
+</html>
