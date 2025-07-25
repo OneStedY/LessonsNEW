@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="wrap"></div>
+
+
+<script>
+  fetch('https://dummyjson.com/carts')
+          .then(products => products.json())
+          .then(cartsObject => {
+            const {carts} = cartsObject;
+            console.log(carts)
+
+            for (const cart of carts) {
+              const div = document.createElement(`div`);
+              div.classList.add(`container`);
+              const divInfo = document.createElement(`div`)
+              divInfo.innerText = `
+              Cart ID: ${cart.id},
+               Total: ${cart.total},
+                Discounted Total: ${cart.discountedTotal}
+                `;
+                  const ol = document.createElement("ol");
+              for (const product of cart.products) {
+                const li = document.createElement("li");
+                  li.innerText = `
+                    Product Title: ${product.title},
+                    Price: ${product.price},
+                    Quantity: ${product.quantity},
+                    Total: ${product.total},
+                    Discount: ${product.discountPercentage},
+                    Discount Total: ${product.discountedTotal},
+
+                  `;
+
+                const img =  document.createElement(`img`)
+                img.src = product.thumbnail;
+                li.appendChild(img)
+                ol.appendChild(li)
+                
+              }
+              div.append(divInfo, ol)
+              wrap.appendChild(div)
+              
+            }
+          });
+</script>
+</body>
+</html>

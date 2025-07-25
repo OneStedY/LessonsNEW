@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="wrap"></div>
+
+<script>
+    fetch('https://dummyjson.com/recipes')
+        .then(response => response.json())
+        .then(data => {
+            const { recipes } = data;
+            const wrap = document.getElementById('wrap');
+
+            for (const recipe of recipes) {
+                const recipeDiv = document.createElement('div');
+                recipeDiv.classList.add('recipe');
+
+
+                const info = document.createElement('div');
+                info.innerHTML = `
+        <h2>${recipe.name}</h2>
+
+        <p><strong>Кухня:</strong> ${recipe.cuisine}</p>
+
+        <p><strong>Категорія:</strong> ${recipe.mealType.join(', ')}</p>
+
+        <p><strong>Порцій:</strong> ${recipe.servings}</p>
+
+        <p><strong>Час приготування:</strong> ${recipe.prepTimeMinutes + recipe.cookTimeMinutes} хв</p>
+     `;
+                recipeDiv.appendChild(info);
+
+
+                const ingredientsTitle = document.createElement('p');
+                ingredientsTitle.innerHTML = '<strong>Інгредієнти:</strong>';
+                recipeDiv.appendChild(ingredientsTitle);
+
+                const ul = document.createElement('ul');
+                for (const ingredient of recipe.ingredients) {
+                    const li = document.createElement('li');
+                    li.textContent = ingredient;
+                    ul.appendChild(li);
+                }
+                recipeDiv.appendChild(ul);
+
+                wrap.appendChild(recipeDiv);
+            }
+        });
+</script>
+</body>
+</html>
